@@ -1,0 +1,14 @@
+CC=gcc 
+CPPLAGS= -I/usr/lib/jvm/java-6-openjdk/include/  -I/include -I/include/linux
+CFLAGS= -I/usr/lib/jvm/java-6-openjdk/include/ -I.  -fPIC 
+LD=gcc -shared
+LDFLAGS= -L/lib
+LIBPREPEND=lib
+LIBAPPEND=-linux-x86_64.so
+LAPACK_INCLUDES=
+BLAS_LIBS=-lblas
+FORTRAN_LIBS=-lgfortran
+LAPACK_LIBS=-llapack
+FC=gfortran
+FFLAGS=-fPIC 
+JLAPACK_JNI_CP=../netlib-java-dev.jar:../lib/f2j/arpack-combined.jar
